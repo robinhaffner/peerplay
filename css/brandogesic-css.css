@@ -1,0 +1,83 @@
+body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 0.8em;
+}
+h1 { font-weight: 300; font-size: 1.8em;}
+h2 { font-weight: 300; font-size: 1.4em;}
+h3 { font-weight: 300; font-size: 1.2em;}
+
+
+.custom_scrollbar {
+	margin: 20px auto;
+	overflow: scroll;
+	padding: 0 20px 0 0;
+}
+
+.custom_scrollbar::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+
+}
+
+.custom_scrollbar::-webkit-scrollbar-track:horizontal {
+	background-color: rgba(113,112,107,0.2);
+	-webkit-border-radius: 5px;
+
+}
+
+.custom_scrollbar::-webkit-scrollbar-thumb:horizontal {
+	background-color: rgb(97,171,234);
+	-webkit-border-radius: 6px;
+
+}
+
+.isi {
+    background-color: #333;
+    color: #efefef;
+    height: 200px;
+}
+
+.isi a {
+    color: lightblue;
+}
+
+#logo_container {
+    width: 30%;
+    height: 100%;
+    float: left;
+    font-size: .5em;
+}
+
+#isi_container {
+    overflow: scroll;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#visaid {
+    position: fixed;
+    right: -45px;
+    top: 200px;
+    background-color: rgb(75,172,198);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    height: 20px;
+    width: 100px;
+    margin: 0px;
+    text-align: center;
+    -webkit-border-radius: 6px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    webkit-box-shadow:  -3px -2px 3px 0 #333;
+    -moz-box-shadow: -3px -2px 3px 0 #333;
+    box-shadow: -3px -2px 3px 0 #333;
+}
+
+#visaid a {
+  color: white;
+  text-decoration: none;
+}

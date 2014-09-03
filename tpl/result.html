@@ -1,0 +1,25 @@
+<div class="row"><div class="headline">{{{this.headline}}}</div>
+<h1>{{{this.question}}}</h1>
+<div style="display:none">
+{{#if answers}}
+<ul data-role="listview" data-qid="{{this.qid}}" data-groupid="{{this.groupid}}" data-async-answer="{{this.async-answer}}" data-skip="{{this.skip}}" data-listview-type="{{this.type}}" class="listview selection-list {{this.type}} qlist">
+	{{#this.answers}}
+	<li id="{{this.answersid}}"><div class="color-fill"></div>{{{this.answerstxt}}}</li>
+	{{/this.answers}}
+
+</ul>
+{{/if}}
+</div>
+
+
+
+            <canvas width="400" height="250" id="carousel-bubble0"></canvas>
+            <canvas width="400" height="250" id="carousel-bubble1"></canvas>
+            <canvas width="400" height="250" id="carousel-bubble2"></canvas>
+            <canvas width="400" height="250" id="carousel-bubble3"></canvas>
+            <canvas width="400" height="250" id="carousel-bubble4"></canvas>
+   
+    
+
+    
+    
