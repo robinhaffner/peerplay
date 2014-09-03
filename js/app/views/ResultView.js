@@ -64,15 +64,15 @@ define(function (require) {
         
         
             Chart.defaults.global.responsive = true;
-                
-                var contexts = {
+            
+            //get the ids for the bubbles from the view and build the context list TODO: replace hardcoded refrences and build the context array dymamically
+              var contexts = {
                     bubble0 : $id('carousel-bubble0').getContext('2d'),
                     bubble1 : $id('carousel-bubble1').getContext('2d'),
                     bubble2 : $id('carousel-bubble2').getContext('2d'),
                     bubble3 : $id('carousel-bubble3').getContext('2d'),
                     bubble4 : $id('carousel-bubble4').getContext('2d')
-                    },
-                    bubbleInstances = [];
+                    };
                
         
                 var data = {
@@ -97,17 +97,10 @@ define(function (require) {
                     }
                 };
                 
-        
-        
-                bubbleInstances.push(new Chart(contexts.bubble0).Doughnut(data.segments, config));
-                bubbleInstances.push(new Chart(contexts.bubble1).Doughnut(data.segments, config));
-                bubbleInstances.push(new Chart(contexts.bubble2).Doughnut(data.segments, config));
-                bubbleInstances.push(new Chart(contexts.bubble3).Doughnut(data.segments, config));
-                bubbleInstances.push(new Chart(contexts.bubble4).Doughnut(data.segments, config));
-        
-        
+      
                 helpers.each(contexts, function(bubble){
                     console.log(bubble.canvas);
+                    var _chart = new Chart(bubble).Doughnut(data.segments, config);
                     helpers.addEvent(bubble.canvas, 'click', function(evt){
                          console.log(evt);
                         ///do something here to "POP" the bubble
